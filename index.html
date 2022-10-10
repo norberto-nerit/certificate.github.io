@@ -1,0 +1,56 @@
+<style>
+    body {
+        background: rgb(204, 204, 204);
+    }
+
+    page {
+        background: white;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 0.5cm;
+        box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+    }
+
+    page[size="A4_LANDSCAPE"] {
+        width: 29.70cm;
+        height: 21cm;
+    }
+
+    @media print {
+
+        @page {
+            padding: 0 !important;
+            margin: -1 !important;
+            box-shadow: 0 !important;
+        }
+
+        body,
+        page,
+        img {
+            padding: 0 !important;
+            margin: 0 !important;
+            box-shadow: 0 !important;
+        }
+
+    }
+</style>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <page size="A4_LANDSCAPE">
+        <img src="curso.png" width="100%" height="auto">
+        <p style="margin-top:-10.75%;margin-left: 81%;">##certificate_number##</p>
+        <p style="margin-top:-35%;margin-left: 31.9%;">##name##</p>
+    </page>
+    <page size="A4_LANDSCAPE">
+        <img src="detalhes.png" width="100%" height="auto">
+    </page>
+</body>
+
+</html>
